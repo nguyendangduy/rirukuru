@@ -1,0 +1,3 @@
+<template>
+  Top page
+</template>
