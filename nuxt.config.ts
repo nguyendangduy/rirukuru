@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     output: {
-      publicDir: path.join(__dirname, 'dist')
-    }
-  }
+      publicDir: path.join(__dirname, 'dist'),
+    },
+  },
 })

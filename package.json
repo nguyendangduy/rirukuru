@@ -1,16 +1,41 @@
 {
-  "name": "nuxt-app",
+  "name": "rirukaru",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore",
+    "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.22.9",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/eslint-config": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/stylelint-module": "^5.1.0",
     "@types/node": "^18.17.1",
-    "nuxt": "^3.6.5"
+    "core-js": "^3.32.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "nuxt": "^3.6.5",
+    "postcss-html": "^1.5.0",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^34.0.0",
+    "throttle-debounce": "^5.0.0"
   }
 }
