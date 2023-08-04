@@ -1,0 +1,48 @@
+/* ======== Font family ======== */
+$font-yugothic: "游ゴシック体", yugothic, "游ゴシック","Yu Gothic", "游ゴシック", "Yu Gothic", "YuGothic ff", sans-serif;
+$font-global: "Outfit", "游ゴシック体", yugothic, "游ゴシック", "Yu Gothic", "游ゴシック", "Yu Gothic", "YuGothic ff", "Hiragino Kaku Gothic ProN", "Meiryo",sans-serif;;
+
+/* ======== Font weight ======== */
+$fw-100: 100;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+/* ======== Breakpoint ======== */
+$breakpoint-up: (
+  "md": "screen and (min-width: 768px)",
+  "xmd": "screen and (min-width: 901px)",
+  "lg": "screen and (min-width: 1024px)",
+  "xlg": "screen and (min-width: 1441px)",
+  "xl": "screen and (min-width: 1921px)",
+) !default;
+$breakpoint-down: (
+  "md": "screen and (max-width: 767px)",
+  "lg": "screen and (max-width: 1023px)",
+  "xl": "screen and (max-width: 1920px)",
+) !default;
+
+/* ======== Icon url ======== */
+$ico-arrow-circle-523C3C-button: url('/assets/images/common/ico_arrow_btn_01.svg');
+$ico-arrow-button: url('/assets/images/common/ico_arrow_btn_02.svg');
+$ico-arrow-circle-FA4E16-button: url('/assets/images/common/ico_arrow_btn_03.svg');
+$ico-arrow-circle-FFFFFF-button: url('/assets/images/common/ico_arrow_btn_04.svg');
+$ico-dropdown: url('/assets/images/common/ico_dropdown_01.svg');
+$ico-external-link: url('/assets/images/common/ico_external_link_01.svg');
+$ico-external-link-orange: url('/assets/images/common/ico_external_link_orange_01.svg');
+$ico-external-FFFFFF-link: url('/assets/images/common/ico_external_link_02.svg');
+$ico-search-link: url('/assets/images/common/ico_search_btn_01.svg');
+$ico-phone: url('/assets/images/common/ico_phone_01.svg');
+
+
+/* ======== Icon Staff ======== */
+$ico-arrow-button-staff: url("/assets/images/ico_arrow_button_staff.svg");
+
+/* ======== image Staff ======== */
+$img-card-staff-kawashita: url("/assets/images/img_card_staff_kawashita.png");
+$img-card-staff-sakamoto: url("/assets/images/img_card_staff_sakamoto.png");
+
+/* ======== Transition ======== */
+$transition: 0.25s ease-in-out;

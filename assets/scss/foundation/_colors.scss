@@ -1,0 +1,16 @@
+$color-FFFFFF: #fff;
+$color-000000: #000;
+$color-444444: #444;
+$color-FA4E16: #fa4e16;
+$color-FECF36: #fecf36;
+$color-523C3C: #523c3c;
+$color-F9F9F9: #f9f9f9;
+$color-FCB7A1: #fcb7a1;
+$color-9D9595: #9d9595;
+$color-FA9F16: #fa9f16;
+
+$gradient-FA9F16-FA4E16: radial-gradient(98% 133.61% at 100% 94.25%, #fa9f16 0%, #fa4e16 100%);
+// $gradient-A4861C-D9B225: linear-gradient(169.05deg, #a4861c 0%, #d9b225 100%);
+
+$box-shadow-card-staff: 0px 0px 10px 0px rgba($color-000000, 0.25);
+$gradient-card-staff: radial-gradient(98.00% 133.61% at 100.00% 94.25%, $color-FA9F16 0%, $color-FA9F16 43.75%, $color-FA4E16 100%);

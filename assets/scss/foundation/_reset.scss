@@ -1,0 +1,54 @@
+@use "vars";
+@use "colors";
+@use "mixin";
+
+/* ----------------------------------------------------
+	1.Reset
+---------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: vars.$font-global;
+  font-weight: vars.$fw-500;
+  font-size: 14px;
+  line-height: 1.8;
+  color: colors.$color-523C3C;
+
+  &.is-no-scroll {
+    overflow: hidden;
+  }
+
+  @include mixin.mq-up() {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+}
