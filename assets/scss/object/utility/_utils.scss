@@ -1,15 +1,15 @@
-@use "../../foundation/mixin";
-@use "../../foundation/colors";
-@use "../utility/functions" as *;
+@use '../../foundation/mixin';
+@use '../../foundation/colors';
+@use '../utility/functions' as *;
 
 @include mixin.mq-down() {
-  [data-media]:not([data-media~="sp"]) {
+  [data-media]:not([data-media~='sp']) {
     display: none;
   }
 }
 
 @include mixin.mq-up() {
-  [data-media]:not([data-media~="pc"]) {
+  [data-media]:not([data-media~='pc']) {
     display: none;
   }
 }
@@ -50,7 +50,7 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     height: 1px;
     flex-grow: 1;
     background-color: colors.$color-523C3C;
@@ -64,7 +64,9 @@
 .u-fade-up {
   transform: translateY(50px);
   opacity: 0;
-  transition: opacity 0.8s ease-in-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.8s ease-in-out,
+    transform 0.6s ease-out;
 
   &.is-faded {
     opacity: 1;

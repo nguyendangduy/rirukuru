@@ -1,5 +1,5 @@
-@use "mixin";
-@use "../object/utility/functions" as *;
+@use 'mixin';
+@use '../object/utility/functions' as *;
 
 .c-container-fluid {
   max-width: 1920px;

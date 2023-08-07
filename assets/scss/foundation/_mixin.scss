@@ -1,4 +1,4 @@
-@use "vars";
+@use 'vars';
 
 @mixin mq-up($breakpoint: md) {
   @media #{map-get(vars.$breakpoint-up, $breakpoint)} {

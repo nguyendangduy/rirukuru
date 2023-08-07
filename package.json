@@ -6,18 +6,28 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@types/node": "^18.17.1",
+    "@typescript-eslint/parser": "^6.2.1",
     "core-js": "^3.32.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "nuxt": "^3.6.5",
     "postcss-html": "^1.5.0",
     "prettier": "^3.0.1",
     "sass": "^1.64.2",
     "sass-loader": "^13.3.2",
-    "throttle-debounce": "^5.0.0"
+    "throttle-debounce": "^5.0.0",
+    "typescript": "^5.1.6"
   }
 }

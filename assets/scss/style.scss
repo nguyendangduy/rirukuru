@@ -2,10 +2,10 @@
 // Foundation
 // ==========================================================================
 
-@use "foundation/reset";
-@use "foundation/fonts";
-@use "foundation/common";
-@use "foundation/animation";
+@use 'foundation/reset';
+@use 'foundation/fonts';
+@use 'foundation/common';
+@use 'foundation/animation';
 
 // ==========================================================================
 // Object
@@ -15,4 +15,4 @@
 // Utility
 // -----------------------------------------------------------------
 
-@use "object/utility/utils";
+@use 'object/utility/utils';
