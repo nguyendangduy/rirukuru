@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   css: ['@/assets/scss/style.scss'],
-  modules: ['@nuxtjs/eslint-config-typescript'],
   nitro: {
     preset: 'service-worker',
     output: {
