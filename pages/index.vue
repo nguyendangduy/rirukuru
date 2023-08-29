@@ -1,1 +1,3 @@
-<template><H1>Top page</H1></template>
+<template>
+  <H1>Top page</H1>
+</template>

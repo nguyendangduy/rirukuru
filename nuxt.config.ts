@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   ssr: false,
   css: ['@/assets/scss/style.scss'],
   nitro: {
-    preset: 'service-worker',
     output: {
       publicDir: path.join(__dirname, 'dist'),
     },
